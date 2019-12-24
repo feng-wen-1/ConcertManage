@@ -9,24 +9,50 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        演唱会名称：<br />
-        演唱会举办时间：<br />
-        举办地址：<br />
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" />
         <br />
         <br />
-        歌手：<br />
-        歌手公司：<br />
-        歌手公司地址：<br />
-        歌手公司联系方式：<br />
         <br />
-        主办方：<br />
-        主办方地址：<br />
-        主办方联系方式：<br />
+        <asp:Label ID="Label1" runat="server" Text="演唱会名称："></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
         <br />
-        场馆编号：<br />
-        场馆地址：<br />
+        <asp:Label ID="Label2" runat="server" Text="演唱会举办时间："></asp:Label>
+        <asp:TextBox ID="TextBox3" runat="server" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
         <br />
-        演唱会海报：<br />
-        演唱会票类：</form>
+        <asp:Label ID="Label3" runat="server" Text="举办地址："></asp:Label>
+        <asp:TextBox ID="TextBox4" runat="server" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
+        <p>
+            &nbsp;</p>
+        <asp:Label ID="Label4" runat="server" Text="歌手："></asp:Label>
+        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label5" runat="server" Text="歌手公司："></asp:Label>
+        <asp:TextBox ID="TextBox6" runat="server" style="margin-bottom: 0px"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label6" runat="server" Text="歌手公司地址："></asp:Label>
+        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label7" runat="server" Text="歌手公司联系方式："></asp:Label>
+        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label8" runat="server" Text="主办方："></asp:Label>
+        <asp:TextBox ID="TextBox9" runat="server" OnTextChanged="TextBox9_TextChanged"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label9" runat="server" Text="主办方地址："></asp:Label>
+        <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label10" runat="server" Text="主办方联系方式："></asp:Label>
+        <asp:TextBox ID="TextBox11" runat="server" OnTextChanged="TextBox11_TextChanged"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label11" runat="server" Text="场馆编号："></asp:Label>
+        <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label12" runat="server" Text="场馆地址："></asp:Label>
+        <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+    </form>
 </body>
 </html>
