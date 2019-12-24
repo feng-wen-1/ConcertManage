@@ -43,7 +43,7 @@ namespace concert_system
                 }
                 else if (x2 != "")
                 {
-                    Session["mzh"] = "s1";
+                    Session["mzh"] = s1;
                     Response.Redirect("管理员主页.aspx"); }
             }
 

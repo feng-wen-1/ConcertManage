@@ -10,22 +10,24 @@
         .auto-style2 {
             text-align: left;
         }
-        .auto-style3 {
-            margin-left: 24px;
+        .auto-style4 {
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="auto-style2">
+        <div class="auto-style4">
             <div class="auto-style2">
+                <asp:Menu ID="个人中心" runat="server" OnMenuItemClick="Menu1_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem Text="个人信息" Value="个人信息"></asp:MenuItem>
+                        <asp:MenuItem Text="退出登录" Value="退出登录"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
                 <br />
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style3" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                    <asp:ListItem>个人中心</asp:ListItem>
-                    <asp:ListItem>个人信息</asp:ListItem>
-                    <asp:ListItem>退出登录</asp:ListItem>
-                </asp:DropDownList>
             </div>
+            <div class="auto-style4">
             <br />
             <br />
             <br />
@@ -35,16 +37,17 @@
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="新增演唱会" />
             <br />
             <br />
-            <asp:Button ID="Button2" runat="server" Text="修改演唱会信息" />
+            <asp:Button ID="Button2" runat="server" Text="修改演唱会信息" OnClick="Button2_Click" />
             <br />
             <br />
-            <asp:Button ID="Button3" runat="server" Text="删除演唱会" />
+            <asp:Button ID="Button3" runat="server" Text="删除演唱会" OnClick="Button3_Click" />
             <br />
             <br />
-            <asp:Button ID="Button4" runat="server" Text="修改用户密码" />
+            <asp:Button ID="Button4" runat="server" Text="修改用户密码" OnClick="Button4_Click" />
             <br />
             <br />
-            <asp:Button ID="Button5" runat="server" Text="更新物流信息" />      
+            <asp:Button ID="Button5" runat="server" Text="更新物流信息" OnClick="Button5_Click" />
+            </div>
         </div>
     </form>
 </body>
